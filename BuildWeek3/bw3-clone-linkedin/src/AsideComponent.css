@@ -1,0 +1,5 @@
+.profiliConsultati button, .sezioneInteressi button {
+    border: 1px solid !important;
+    border-radius: 20px !important;
+    background-color: white !important;
+}

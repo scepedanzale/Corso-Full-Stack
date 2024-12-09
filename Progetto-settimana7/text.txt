@@ -1,0 +1,6 @@
+
+Clone di Netflix con tecnologia React
+- ricerca film
+- pagina dettaglio film
+- responsività
+- pagina profilo

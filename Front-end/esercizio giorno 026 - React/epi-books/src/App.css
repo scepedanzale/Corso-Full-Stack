@@ -1,0 +1,41 @@
+#root, html, body{
+    height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.selectedBook {
+  border: 3px solid #FFC107 !important;
+}
+
+#books .card{
+  width: 100%;
+  transition: transform 0.2s;
+  transition: box-shadow 0.1s;
+  overflow: hidden;
+}
+#books .card:hover{
+  transform: scale(1.1);
+  border: 1px solid #FFC107;
+  box-shadow: 1em 1em 1em  rgba(0, 0, 0, 0.335);
+}
+
+
+.list-group-item{
+  font-size: 0.8em;
+  background-color: rgb(243, 243, 243);
+  padding: 0.5em;
+}
+.list-group-item p{
+  margin: 0;
+}
+.list-group-item p:nth-child(1){
+  font-weight: 600;
+}
+.list-group-item p:nth-child(2){
+  font-weight: 300;
+  font-size: 0.9em;
+  font-style: italic;
+}

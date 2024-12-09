@@ -1,0 +1,24 @@
+# Ignorare file e directory generate da WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backup-db/*
+
+# Ignorare file e directory generate da plugin e temi
+wp-content/cache/
+wp-content/plugins/hello.php
+wp-content/plugins/hello/
+wp-content/Temi/twenty*/
+
+# Ignorare file di log e file temporanei
+error_log
+*.log
+*.tmp
+*.temp
+
+# Ignorare file di configurazione specifici
+.htaccess
+nginx.conf

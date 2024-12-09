@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body data-bs-theme="dark" class="user-select-none">
+    <div id="body-container" class="container-fluid">
+        <div id="body-row" class="row">
+
+            <header class="col-12 col-lg-3 order-2 order-lg-0 z-3 position-sticky bottom-0">
+                <!-- navbar sulla sx -->
+                <!-- MOBILE: si divide in alto e in basso -->
+                <div class="sticky-top">
+                    <nav>
+                        <!-- menù fisso in alto -->
+                        <!-- MOBILE: fissato in basso home, cerca, libreria -->
+                        <div class="menu container">
+                            <div class="nav-down container mb-3 pt-3">  <!-- menu alto (visibile nel mobile) -->
+                                <div class="row">
+                                    <div class="col-4 col-lg-12">
+                                        <a href="index.html" class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center">
+                                            <i class="bi bi-house-door-fill fs-4"></i>
+                                            <p class="ms-lg-3 my-0 ">Home</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-lg-12">
+                                        <a href="index.html" class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center">
+                                            <i class="bi bi-search fs-4"></i>
+                                            <p class="ms-lg-3 my-0">Cerca</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-lg-12">
+                                        <a href="index.html" class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center">
+                                            <i class="bi bi-collection fs-4"></i>
+                                            <p class="ms-lg-3 my-0">La tua libreria</p>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="personal-area container d-none d-lg-block pb-3 border-bottom border-body-secondary"> <!-- menu basso (non visibile nel mobile) -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="index.html" class="d-flex align-items-center">
+                                            <i class="bi bi-plus-square-fill fs-4"></i>
+                                            <p class="ms-3 my-0">Crea playlist</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="index.html" class="d-flex align-items-center">
+                                            <i class="bi bi-heart-fill fs-4"></i>
+                                            <p class="ms-3 my-0">Brani che ti piacciono</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="index.html" class="d-flex align-items-center">
+                                            <i class="bi bi-bookmark-fill fs-4"></i>
+                                            <p class="ms-3 my-0">I tuoi episodi</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- lista playlist, scrollabile -->
+                        <!-- MOBILE: nascosta -->
+                        <div class="lista-playlist container d-none d-lg-block" style="height: 34em;">
+                            <ul class="list-unstyled ms-2 mt-3 overflow-auto" style="height: 100%;">
+                                <li><a href="#">UMBERTO'S SONGS</a></li>
+                                <li><a href="#">Sunny days</a></li>
+                                <li><a href="#">Stu-dying🔪</a></li>
+                                <li><a href="#">HYPE</a></li>
+                                <li><a href="#">🌙...sleeping......zzzz...🌙</a></li>
+                                <li><a href="#">beach time!</a></li>
+                                <li><a href="#">Cooking songs 🍜</a></li>
+                                <li><a href="#">on the road 🛤️🛻</a></li>
+                                <li><a href="#">R A N D O M</a></li>
+                                <li><a href="#">🏕️Camping fire🔥</a></li>
+                                <li><a href="#">In the rain💧</a></li>
+                                <li><a href="#">In Love</a></li>
+                                <li><a href="#">Mix Music 90s</a></li>
+                                <li><a href="#">lofi hip hop ☕</a></li>
+                                <li><a href="#">Jazz'n Friends 🎷</a></li>
+                                <li><a href="#">boring evening</a></li>
+                                <li><a href="#">Vintage</a></li>
+                                <li><a href="#">sea sounds 🌊</a></li>
+                                <li><a href="#">Interstellar Soundtrack</a></li>
+                                <li><a href="#">LO ZECCHINO D'ORO</a></li>
+                                <li><a href="#">🪩 DISCO 🪩</a></li>
+                                <li><a href="#">Techno Mix 2023</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            
+            <main class="col-12 order-0 col-lg-9 p-0">
+                <div class="container-fluid container-main">
+                    <div class="row row-main">
+
+                        <div id="main" class="col-12 col-lg-9">  <!-- main principale -->
+                            
+<div class="d-flex align-items-center">
+    <div class="">
+        <span class="btn text-light fs-3 ">&lt;</span> <span class="btn text-secondary fs-3">&gt;</span>
+    </div>
+    <div>
+        <div class="bg-dark d-flex align-items-center border border-2 border-dark rounded-5" style="width: 250px; height: 40px;">
+            <i class="p-2 bi-search"></i> 
+            <form class="">
+                <input type="text" placeholder="Cosa vuoi ascoltare?" class="border-0 bg-dark">
+            </form>
+        </div>
+    </div>
+ </div> 
+
+ <div class="d-flex my-2">
+    <p class="btn border border-1 rounded-4">Brani</p>
+    <p class="btn border border-1 rounded-4">Artisti</p>
+    <p class="btn border border-1 rounded-4">Playlist</p>
+ </div>
+
+ <h2 class="fs-3 p-2 d-none d-md-flex">Ricerche recenti</h2>
+
+ <section class="d-flex  gap-2 my-2 d-none d-md-flex">
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/main/image-10.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+          <h5 class="card-title">Eminem</h5>
+          <p class="card-text">Artista</p>
+        </div>
+    </div>
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/main/image-9.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+            <h5 class="card-title">Beyonce</h5>
+            <p class="card-text">Artista</p>
+        </div>
+    </div>
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/main/image-11.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+          <h5 class="card-title">Dr dre</h5>
+          <p class="card-text">Artista</p>
+        </div>
+    </div>
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/main/image-12.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+          <h5 class="card-title">G Gaber</h5>
+          <p class="card-text">Artista</p>
+        </div>
+    </div>
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/search/image-39.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+          <h5 class="card-title">Caparezza</h5>
+          <p class="card-text">Artista</p>
+        </div>
+    </div>
+    <div class="card bg-black" style="width: 10rem;">
+        <img src="assets/imgs/search/image-5.jpg" class="card-img-top rounded-circle align-self-center mt-4 position-relative" alt="..." style="width:80%">
+        <p class="position-absolute x fs-5 btn">x</p>
+        <div class="card-body">
+          <h5 class="card-title">Clementin</h5>
+          <p class="card-text">Artista</p>
+        </div>
+    </div>
+ </section>
+ <section>
+    <h2 class="fs-3 p-2">Sfoglia tutto</h2>
+    <div class="d-flex gap-2 flex-wrap mb-2 justify-content-center ">
+        <div class="bg-danger ciao lol" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Musica</p>
+            <img src="assets/imgs/search/image-18.jpg" alt="">
+        </div>
+
+        <div class="bg-info ciao lol" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Podcast</p>
+            <img src="assets/imgs/search/image-1.jpeg" alt="">
+        </div>
+
+        <div class="bg-success ciao lol" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Eventi dal vivo</p>
+            <img src="assets/imgs/search/image-2.jpg" alt="">
+        </div>
+
+        <div class="bg-warning ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Creata per te</p>
+            <img src="assets/imgs/search/image-3.jpg" alt="">
+        </div>
+
+        <div class="bg-danger ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Nuove uscite</p>
+            <img src="assets/imgs/search/image-4.jpg" alt="">
+        </div>
+
+        <div class="bg-info ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Il 2023 in musica</p>
+            <img src="assets/imgs/search/image-5.jpg" alt="">
+        </div>
+
+        <div class="bg-success ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Merch</p>
+            <img src="assets/imgs/search/image-6.jpg" alt="">
+        </div>
+
+        <div class="bg-warning ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Estate</p>
+            <img src="assets/imgs/search/image-26.jpg" alt="">
+        </div>
+
+        <div class="bg-danger ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Buone Feste</p>
+            <img src="assets/imgs/search/image-46.jpeg" alt="">
+        </div>
+
+        <div class="bg-info ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Pop</p>
+            <img src="assets/imgs/search/image-19.jpg" alt="">
+        </div>
+
+        <div class="bg-success ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Hip Hop</p>
+            <img src="assets/imgs/search/image-25.jpeg" alt="">
+        </div>
+
+        <div class="bg-warning ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Classifiche</p>
+            <img src="assets/imgs/search/image-52.jpg" alt="">
+        </div>
+
+        <div class="bg-danger ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Nuove uscite</p>
+            <img src="assets/imgs/search/image-28.jpg" alt="">
+        </div>
+
+        <div class="bg-info ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Dance</p>
+            <img src="assets/imgs/search/image-27.jpg" alt="">
+        </div>
+
+        <div class="bg-success ciao" style="width: 150px; height:150px">
+            <p class="p-1 fw-bold fs-5">Elettronic</p>
+            <img src="assets/imgs/search/image-36.jpg" alt="">
+        </div>
+    </div>
+ </section>
+
+                        </div>
+        
+                        <aside class="col-3 p-0 bg-black d-none d-lg-block z-2" style="height: 100%;">
+                            <!-- attività amici, fissato sulla dx, possibilità di nasconderlo -->
+                            <!-- MOBILE: nascosta -->
+                            <div class="sidebar container m-0 w-100">
+                                <div class="sticky-top">
+                                    <div class="row">
+                                        <div class="d-flex justify-content-between align-items-center py-4">
+                                            <h6 class="text-light m-0">Attività amici</h6>
+                                                <div>
+                                                    <i class="bi bi-person-add me-2"></i>
+                                                    <i id="FaCloseBtn" class="bi bi-x-lg me-2"></i>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <!-- "cards" attività amici -->
+                                    <div id="sidebar-friends">
+                                       
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/main/umberto.jpeg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Umberto Emanuele</p>
+                                                    <p class="my-0">Belli Capelli<i class="bi bi-dot text-white"></i>Francesco De Gregori</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Titanic</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>9 ore</p>
+                                                </div>
+                                            </div>
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/search/image-1.jpeg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Vincenzo Arpaia</p>
+                                                    <p class="my-0">Space Cowboy<i class="bi bi-dot text-white"></i> Jamiroquai</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> The Return of the Space Cowboy</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>4 ore</p>
+                                                </div>
+                                            </div>
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/search/image-2.jpg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Celeste Artuso</p>
+                                                    <p class="my-0">Powerless <i class="bi bi-dot text-white"></i> Linkin Park</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Living Things</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>6 ore</p>
+                                                </div>
+                                            </div>
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/search/image-4.jpg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Jessica Iacoviello</p>
+                                                    <p class="my-0">Ultraviolence <i class="bi bi-dot text-white"></i> Lana Del Rey</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Pretty When You Cry</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>1 ora</p>
+                                                </div>
+                                            </div>
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/search/image-6.jpg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Francesco Cecca</p>
+                                                    <p class="my-0">Canzone All'Entrata <i class="bi bi-dot text-white"></i> Caparezza</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Museica</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>4 ore</p>
+                                                </div>
+                                            </div>
+                                            <div class="friend-card row row-cols-3 mb-4">
+                                                <div class="col-3 p-0 text-center">
+                                                    <img class="rounded-circle w-50" src="assets/imgs/search/image-5.jpeg" alt="">
+                                                </div>
+                                                <div class="col-7 p-0">
+                                                    <p class="my-0 fw-bold">Lisa Buffagni</p>
+                                                    <p class="my-0">In the Waiting Line <i class="bi bi-dot text-white"></i> Zero 7</p>
+                                                    <p class="text-secondary m-0"><i class="bi bi-disc text-secondary"></i> Simple Things</p>
+                                                </div>
+                                                <div class="col-2 p-0">
+                                                    <p>2 ore</p>
+                                                </div>
+                                            </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Player versione desktop --> 
+            <!-- menù in basso, link ad artista, info sul brano ecc -->
+            <nav id="player-desktop" class="position-sticky bottom-0  px-0 z-3 order-1">
+                <div class="bottom-0 bg-dark w-100 px-3 d-none d-lg-block" data-bs-theme="'dark">
+                    <div class="row">
+                        <div class="col-3 d-flex align-items-center ">
+                            <img class="w-25 p" src="assets/imgs/main/image-20.jpeg" alt="">
+                            <div class="p-3">
+                                <p class="text-light fw-semibold m-0 ">Hozier</p>
+                                <p class="text-light m-0">Would That I</p>
+                            </div>
+                            <i class="bi bi-heart text-success m-3"></i>
+                        </div>
+
+                        <div class="col-6 p-0">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex flex-column justify-content-center mt-4">
+                                    <a href="#"><i class="bi bi-shuffle text-light"></i></a>
+                                    <i class="bi bi-dot text-white"></i>
+                                </div>
+                                <a href="#"><i class="bi bi-skip-start-fill text-light fs-4 ms-3"></i></a>
+                                <a href="#"><i class="bi bi-play-circle-fill text-light fs-3 mx-3"></i></a>
+                                <a href="#"><i class="bi bi-skip-end-fill text-light fs-4 me-3"></i></a>
+
+                                <div class="d-flex flex-column justify-content-center mt-4">
+                                    <a href="#"><i class="bi bi-repeat text-light"></i></a>
+                                    <i class="bi bi-dot text-white"></i>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-baseline">
+                                <p class="text-light me-3">0:00</p>
+                                <div class="progress w-75" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100" style="height: 10px">
+                                <div class="progress-bar" style="width: 15%;"></div>
+                                </div>
+                                <p class="text-light ms-3">3:20</p>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-end">
+                            <i class="bi bi-border-width"></i>
+                            <i class="bi bi-speaker ms-2"></i>
+                            <i class="bi bi-volume-down ms-2 fs-4"></i>
+                            <hr style="width: 5em;" class="border border-2 rounded-1 border-white">
+                            <i class="bi bi-arrows-angle-expand ms-2 "></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Player versione mobile: fissato sopra la navbar -->
+            <nav id="player-mobile" class="d-lg-none p-0 px-2 position-sticky" style="bottom: 6em;">
+                <div class="container-fluid  border rounded-1">
+                    <div class="row bg-body-secondary p-2">
+                        <div class="col-1 d-flex align-items-center">
+                            <img class="rounded-circle w-100" src="assets/imgs/search/image-1.jpeg" alt="">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <a href="#">Nome artista</a>
+                        </div>
+                        <div class="col-5 d-flex align-items-center justify-content-end fs-4">
+                            <a href="#"><i class="bi bi-speaker"></i></a>
+                            <a href="#" class="mx-2"><i class="bi bi-heart mx-2"></i></a>
+                            <a href="#"><i class="bi bi-play-fill fs-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

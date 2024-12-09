@@ -1,0 +1,9 @@
+@import '_header';
+@import 'sidebar';
+@import 'indexsass';
+@import 'album-main';
+@import 'mainArtist';
+
+#main, aside, .sidebar, .row-main, .container-main{
+    height: 100%;
+}

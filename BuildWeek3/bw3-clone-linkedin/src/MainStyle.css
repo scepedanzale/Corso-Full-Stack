@@ -1,0 +1,121 @@
+.btnCheck
+{
+    border: 1px solid #0A66C2 !important;
+    border-radius: 20px !important;
+    color: #0A66C2 !important;
+}
+
+.btnCheck:hover
+{
+    background-color: #E2F0FE !important;
+    border: 2px solid #0A66C2 !important;
+}
+
+a:hover
+{
+    text-decoration: underline !important;
+}
+
+.btnDisponibile
+{
+    border-radius: 20px !important
+}
+
+.btnDisponibile:hover
+{
+    background-color:midnightblue  !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.Card1, .Card2, .Card3{
+    line-height: 0.5rem;
+    border-radius: 20px;
+}
+
+button
+{
+    margin:0 !important;
+    width: fit-content !important;
+}
+
+.ButtonContainer
+{
+    margin:0 !important;
+    padding: 0 !important;
+}
+
+.ButtonContainer button
+{
+    margin:5px !important;
+}
+
+.OtherButton
+{
+    border: 1px solid gray !important;
+    border-radius: 20px !important;
+    color: gray !important;
+}
+
+.OtherButton:hover
+{
+    border: 2px solid black !important;
+    background-color: rgb(222, 221, 221) !important;
+}
+
+.rowProfile {
+    line-height: 0.8rem;
+}
+
+.cardProfilo
+{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.mycarouselItem
+{
+    margin: auto !important;
+}
+
+/* .myCarouselBg
+{
+    background-color: rgb(194, 189, 189);
+} */
+
+.mycarouselItem1 {
+    background-color: #DDE7F1;
+}
+
+.btnIconCamera {
+    border-radius: 50% !important;
+    right:1.5rem !important;
+    top:1rem !important;
+    background: white !important;
+}
+
+/* .imgBanner {
+    background-size: 'cover';
+      background-position: 'center';
+      background-repeat: 'no-repeat';
+      width: '100%';
+      height: '100%';
+      position: 'absolute';
+      top: 0;
+      left: 0;
+} */
+
+.userBio {
+    margin-bottom: 0.8rem;
+}
+
+.mainBg
+{
+    height: 25%;
+    width:100%;
+    margin:-1rem;
+    background-image: url("https://t4.ftcdn.net/jpg/02/40/63/55/240_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg");
+
+}

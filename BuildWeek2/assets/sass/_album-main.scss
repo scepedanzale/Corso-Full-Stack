@@ -1,0 +1,143 @@
+section {
+    width: 100%;
+}
+
+.buttons i, #verticalDots  {
+    display: none;
+}
+
+.brani {
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 25%, rgba(60,51,46,1) 45%, rgba(113,97,55,1) 75%, rgba(161,139,63,1) 100%);
+    
+    padding: 0 3vw 0 3vw;
+}
+
+.bannerAlbum {
+    background-color: #e5c551;
+    box-shadow: inset 0px -84px 82px 34px rgba(0,0,0,0.3);
+    background-size: cover;
+    height: 26.5vw;
+}
+
+.album {
+    box-shadow: 0px 0px 82px 34px rgba(0,0,0,0.2);
+    width: 12vw;
+    margin: 2vw 1vw 1vw 1.5vw;
+}
+
+main > section > div:nth-of-type(1) {
+    padding: 1vw 0 0 1vw;
+}
+
+.buttons {
+    width: 100%;
+}
+
+button {
+    opacity: 75%;
+    font-size: 1.2vw;
+    margin-right: 0.5vw;
+}
+
+button:hover {
+    opacity: 50%;
+}
+
+.profile {
+    width: 1.3vw;
+    padding-bottom: 0.3vw;
+
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.albumNome {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.band {
+    width: 10%;
+    
+}
+
+span {
+    opacity: 75%;
+}
+
+.title {
+    height: 14vw;
+}
+
+svg {
+    position: relative;
+    right: 1vw;
+}
+
+.iconeBrani {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+.immagine {width: 17vw; margin: 3vw 2vw 0 2vw;}
+
+@media (max-width: 768px) { 
+    .immagine {
+        width: 50vw;
+    }
+
+    .buttons button, #legenda, #indice, #riproduzione, #durata, #spazio, hr, #horizontalDots  {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width:320px) {
+    
+    .buttons i, #verticalDots  {
+        display: block;
+    }
+
+    .bannerAlbum {
+        height: 90vw;
+    }
+
+
+    .albumTitle {
+        font-size: 1rem;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    #play {
+        position: relative;
+        left: 58%;
+
+    }
+
+    .iconeBrani {
+        position: relative;
+        right: 43vw;
+        margin-bottom: 1vw;
+    }
+
+    .brani {
+        background: rgb(0,0,0);
+        background: linear-gradient(360deg, rgba(0,0,0,1) 34%, rgba(29,25,22,1) 46%, rgba(60,51,46,1) 61%, rgba(84,72,50,1) 75%, rgba(113,97,55,1) 86%, rgba(161,139,63,1) 100%);
+    }
+}
+
+
+
+
+
+
+
+

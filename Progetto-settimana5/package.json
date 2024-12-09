@@ -1,0 +1,12 @@
+{
+  "name": "progetto-settimana6",
+  "version": "1.0.0",
+  "description": "Progetto settimana 6 - Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Celeste Artuso",
+  "license": "ISC"
+}

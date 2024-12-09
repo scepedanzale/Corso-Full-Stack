@@ -1,0 +1,32 @@
+# File e cartelle di sistema
+.DS_Store
+Thumbs.db
+
+# Backup e file temporanei
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Core di WordPress (gestito esternamente, non serve includerlo)
+wp-admin/
+wp-includes/
+
+# Plugin di terze parti
+wp-content/plugins/*
+
+# Upload (non mettere immagini o file multimediali nel repository)
+wp-content/uploads/
+
+# File di configurazione locali
+wp-config.php
+.env
+
+# Node.js (se usi strumenti di build come webpack o gulp)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# File generati dal build
+dist/
+build/

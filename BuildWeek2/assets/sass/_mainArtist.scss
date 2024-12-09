@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(40, 36, 36);
+}
+
+.mainArtist{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(96,96,96,1) 100%);
+}
+
+.artist-banner {
+   
+    background-color: black; /* AGGIUNGERE IMMAGINE DI COPERTINA*/
+    background-size: cover;
+    background-position: center;
+    
+
+    
+    height: 400px; 
+    position: relative; 
+}
+
+
+.profile-image-dropdown {
+    position: absolute;
+    top: 15px; 
+    right: 10px; 
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10%;
+    width: 25%;
+    height: 10%;
+
+    
+}
+
+
+.heartIcon{
+bottom: 5px;
+right: 1px;
+
+
+}
+
+
+.bi-patch-check-fill{
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 49%, rgba(2,0,36,0) 51%);
+width: 30px;
+}
+
+
+
+
+.album-cover {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  @media (max-width: 768px) {
+    .profile-image-dropdown {
+        display: none;
+    }
+}
+
+.x{
+    
+    right: 5px; 
+    top: 0;
+    
+
+}
+
+.ciao{
+    position: relative;
+            width: 100%; 
+            height: 300px; 
+            border: 1px solid #000; 
+            overflow: hidden;
+            border-radius: 10%;
+}
+
+.ciao img {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 45%;
+    transform: rotate(20deg);
+}
+/*
+@media (min-width: 768px){
+    .lol{
+        flex-basis: 50%;
+    }
+}
+*/
+/*
+@media (min-width: 768px){
+    .lol{
+        flex-basis: 15%;
+    }
+}
+*/

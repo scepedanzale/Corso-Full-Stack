@@ -1,0 +1,38 @@
+*,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      body div,
+      footer {
+        padding: 1rem;
+      }
+
+      footer {
+        padding: 1rem;
+        background-color: black;
+        color: white;
+      }
+
+      .myHeading {
+        color: #ff00d6;
+      }
+
+    #tableArea{
+        border: 1px solid black;
+        width: fit-content;
+        padding: 0;
+        margin: 1em;
+    }
+    #tableArea th{
+        padding: 0.2em 0.5em;
+        
+    }
+    #tableArea td{
+        text-align: center;
+    }

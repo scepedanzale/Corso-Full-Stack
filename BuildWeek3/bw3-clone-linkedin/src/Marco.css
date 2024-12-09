@@ -1,0 +1,37 @@
+.logo {
+    width: 1.8em;
+    
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .top-avatar {
+    border-radius: 90px;
+    width: 2em;
+  }
+  
+  .defaultNavbar i  {
+    font-size: 1.5em;
+    
+  }
+  
+  .top-nav {
+    margin-left: 8%;
+  }
+  .nav-right{
+    border-left: solid #c4c2c2 1px;
+  }
+  
+  .nav-link {
+    padding: 0px !important;
+  }
+  
+  .defaultNavbar {
+    font-size: 0.8em;
+    padding: 0px !important;
+  }
+  
+  .defaultNavbar input{background-color: #EDF3F8!important; width: 75%;}
+  .provapremium{color: #5c3b09; text-decoration: underline;}

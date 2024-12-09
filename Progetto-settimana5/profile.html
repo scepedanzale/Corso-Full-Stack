@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
+</head>
+<body class="bg-dark" data-bs-theme="dark">
+    <header>
+        <nav class="navbar navbar-expand bg-body-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="nav-start d-flex align-items-center">
+                    <a class="navbar-brand p-0 " href="index.html">
+                        <img src="imgs/netflix_logo.png" alt="Logo" width="100" height="100%" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+          </nav>
+    </header>
+    <main class="my-5">
+        <div class="container w-50">
+            <div class="row title">
+                <h1 class="text-light fw-normal">Edit Profile</h1>
+            </div>
+            <div class="row main border-top border-bottom border-1">
+                <div class="col-3 mt-3">
+                    <img src="imgs/avatar.png" class="img-fluid" alt="">
+                </div>
+                <div class="col">
+                    <div class="row border-bottom border-1 py-3">
+                        <p class="">Strive Student</p>
+                        
+                           <form action="">
+                            <caption>Languages:</caption> <br>
+                            <select name="languages" id="languages">
+                                <option value="English">English</option>
+                                <option value="English">Italian</option>
+                                <option value="English">Spanish</option>
+                            </select>
+                           </form>
+                        </p>
+                    </div>
+                    <div class="row border-bottom border-1 py-3">
+                        <p>Maturity Settings:</p>
+                        <p class="bg-body-secondary w-50">ALL MATURITY RATINGS</p>
+                        <p class="f-small">Show titles of all maturity ratings for this profile.</p>
+                        <button class="btn btn-outline-light rounded-0 w-25 f-small "> EDIT</button>
+                    </div>
+                    <div class="row py-3">
+                        
+                        <form action="">
+                            <caption>Autoplay controls</caption> <br>
+                            <input type="checkbox"><span class="ms-1 f-small">Autoplay next episode in a series on all devices. </span><br>
+                            <input type="checkbox"><span class="ms-1 f-small">Autoplay previewes while browsing on all devices.</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 px-5">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <button class="btn btn-light rounded-0 px-4 w-100">SAVE</button>
+                </div> 
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <button class="btn btn-outline-light rounded-0 px-4 w-100">CANCEL</button>
+                </div> 
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <button class="btn btn-outline-light rounded-0 px-4 w-100">DELETE PROFILE</button>
+                </div> 
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.btn-post-home {
+    width: 400px !important;
+    cursor: pointer !important;
+    border-radius: 30px !important;
+    font-size: 0.9rem !important;
+}
+
+.btn-post-create, .btn-post-active {
+    display: flex !important;
+    justify-content: space-between !important;
+    cursor: pointer;
+    border-radius: 25px !important;
+}
+
+.btn-post-create button {
+    background: none !important;
+    color: grey !important;
+    font-size: 0.8rem !important;
+}
+
+.btn-post-create button:hover {
+    background-color: rgb(236, 236, 236) !important;
+}
+
+.bi-card-image, .bi-calendar3, .bi-file-text {
+    font-weight: 500 !important;
+}
+
+.bi-hand-thumbs-up, .bi-chat-right-text, .bi-arrow-repeat, .bi-send-fill {
+    margin-right: 0.5rem !important;
+    color: grey !important;
+}
+
+.btn-post-active button {
+    font-size: 0.8rem !important;
+    padding: 2 0 !important;
+    background: none;
+}
+
+.btn-post-active button:hover, .btn-post-home:hover  {
+    background-color: rgb(236, 236, 236) !important;
+}
+
+.btn-post-home {
+    background-color: white !important;
+}
+
+.info-account {
+    font-size: 0.8rem !important; 
+    line-height: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+.btn-close-3dots-post button {
+    border: none !important;
+    padding: 0 0.2rem !important;
+    margin: 0 !important;
+    background: none !important;
+    border-radius: 50px;
+}
+
+.btn-close-3dots-post button:hover {
+    background-color: rgb(236, 236, 236) !important;
+}
+
+.btn-post-grey button {
+    background-color: rgb(236, 236, 236) !important;
+    color: grey;
+    border:0;
+    border-radius: 50px;
+    margin-left: 1rem !important;
+}
+
+.btn-smile {
+    border: 0 !important;
+    background: none!important;
+    color: grey !important;
+}

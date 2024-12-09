@@ -1,0 +1,28 @@
+footer>div>div>div>div>div>div>p, 
+#navDropdownFooter, 
+#navbarCollapseFooter>div>div>div, 
+footer>div>p, 
+#RightPartFooterLeftSide>ul>li>div>p,
+.formLingue,
+.formLingue>div>select>option,
+.formLingue>div>select{
+    font-size: 11px;
+    letter-spacing:0.05em;
+}
+#RightPartFooterLeftSide>ul>li>div>p:first-child{
+    font-size: 13px;
+    font-weight: 500;
+}
+#navDropdownFooter{
+    padding: 0;
+}
+
+footer>div>div>div>div>div>div>p, #RightPartFooterLeftSide>ul>li>div>p{
+    margin: 0;
+}
+
+@media screen and (min-width: 500px){
+    footer>div>div>div>div>div>p{
+        margin: 0.2em 0;
+    }
+}

@@ -1,0 +1,149 @@
+/* Your styles here */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+
+    line-height: 1.65;
+    color: #393d41;
+    text-align: center;
+    
+}
+
+h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #25a2c3;
+    line-height: 1.2em;
+}
+
+/* HEADER */
+header{
+    background-color: black;
+    text-align: center;
+}
+header img{
+    height: 2em;
+    padding: 1.5em;
+}
+
+
+/* MAIN */
+main > div:first-child{
+    background-image: url(../images/banner.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2em;
+    text-align: center;
+    
+}
+main h1{
+    font-size: 1.8em;
+    margin-bottom: 0.6em;
+}
+main button{
+    background-color: #f04c2f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+main  img{
+    width: 100%;
+}
+section.main{
+    padding: 2em;
+}
+section.main img{
+    padding: 1em 0;
+    border-radius: 50%;
+}
+section.main p{
+    padding: 0.5em 0;
+}
+section.main h4{
+    padding-top: 1em;
+}
+
+
+section.testimonianze{
+    background-color: #e22d0e;
+    padding: 2em;
+    color: white;
+}
+section.testimonianze h2{
+    font-size: 1.6em;
+    color: white;
+    padding: 1em 0;
+}
+section.testimonianze i{
+    font-style: italic;
+    font-size: 0.95em;
+}
+section.testimonianze div{
+    padding-top: 1.5em;
+}
+section.testimonianze div p:last-child{
+    font-size: 0.7em;
+}
+
+
+/* ARTICLE */
+article{
+    background-color: white;
+    padding: 2em 1em;    
+}
+article div{
+    margin-bottom: 2em;
+    margin-top: 1em;
+    border: 1px solid #dee1e3;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+article img{
+    margin-bottom: 0.5em;
+}
+article h4{
+    color: #25a2c3;;
+    font-weight: 700;
+}
+article p{
+    padding: 0.8em 1em 2em 1em;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #25a2c3;
+    text-align: center;
+    padding: 2em 0 2.5em 0;
+    
+}
+footer h2{
+    color: white;
+    font-size: 1.5em;
+}
+footer ol{
+    padding: 1.5em 0;
+}
+footer a, footer li, footer p{
+    color: #c8e7f0;
+}
+footer i{
+    color: white;
+}
+footer > p{
+    font-size: 0.8em;
+    padding-top: 2em;
+}
+
+footer hr{
+    width: 50%;
+    margin: auto;
+}
